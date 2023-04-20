@@ -126,6 +126,18 @@ footer {
     background-color: var(--black);
 }
 
+/* Spinning annimations */
+
+/*
+@keyframes spin {
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+*/
+
 #Moto {
     display: block;
     text-align: center;
@@ -134,7 +146,41 @@ footer {
     font-family: Impact, fantasy;
     letter-spacing: .2em;
     font-style: italic;
+
+    /*
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+     Animations needs to be fixed
+    animation: spin 0.5s infinite linear;
+    display: inline-block;
+    font-size: 30px;
+    */
 }
+
+/* Photo Gallary */
+
+.gallary {
+    display: flex;
+    justify-content: space-between;
+}
+
+img:first-child {
+margin-right: 10px;
+}
+
+img:last-child {
+    margin-left: 450px;
+}
+
 
 /* Pokes for sale section */
 
@@ -154,3 +200,4 @@ footer {
     letter-spacing: .1em;
     font-style: italic;
 }
+
