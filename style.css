@@ -173,19 +173,30 @@ footer {
     justify-content: space-between;
 }
 
+img {
+    transition: transform .7s ease-in-out;
+}
+
+img:hover 
+{
+    transform: rotate(360deg);
+}
+
 img:first-child {
-margin-right: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
 }
 
 img:last-child {
     margin-left: 450px;
+    border-radius: 25px;
 }
 
 
 /* Pokes for sale section */
 
 .pokeCardsColor {
-    background-color: indigo; 
+    background-color: indigo;
 }
 
 #pokeCards {
@@ -200,4 +211,3 @@ img:last-child {
     letter-spacing: .1em;
     font-style: italic;
 }
-
