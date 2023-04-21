@@ -165,8 +165,8 @@ footer {
     font-size: 1rem;
     line-height: 1.5;
     background-color: var(--black);
-    border: 3px solid #000;
-    animation: pulse 1s infinite;
+    border: 3px solid blue;
+    animation: pulse 5s infinite;
 }
 
 @keyframes pulse {
@@ -176,7 +176,7 @@ footer {
     }
 
     25% {
-        border-color: pink;
+        border-color: blue;
     }
 
     50% {
@@ -208,7 +208,7 @@ footer {
     display: block;
     text-align: center;
     font-size: 24px;
-    color: blue;
+    color: aquamarine;
     font-family: Impact, fantasy;
     letter-spacing: .2em;
     font-style: italic;
@@ -259,6 +259,28 @@ img:last-child {
     margin-left: 450px;
     border-radius: 25px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Where to reach out section */
+
+.location
+{
+    text-align: center;
+}
+
+.location h4 {
+    font: bold;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* message output */
+
+#txt {
+    text-align: center;
 }
 
 
