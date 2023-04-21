@@ -14,7 +14,9 @@
 
 <body>
 
+    <!--Audio queues-->
     <audio id="audio" src="pokeSong.mp3"></audio>
+    <audio id="mario" src="Mario-coin-sound.mp3"></audio>
 
     <!--Navigation Bar-->
     <nav>
@@ -47,7 +49,7 @@
                 Well, you found the right place for your place to fuel your pokediction!
                 Here at Njoy Games we may be able to help you with decent priced singles and your next fix for
                 poke-needs! Give us a try and check what we have to offer you to...
-                <p onmouseenter="playAudio()" onmouseleave="pauseAudio()" id="Moto">Catch 'Em all!</span>
+            <p onmouseenter="playAudio()" onmouseleave="pauseAudio()" id="Moto">Catch 'Em all!</span>
 
             </p>
 
@@ -60,7 +62,7 @@
 
                 <ul>
                     <li>
-                        <h4>Let's get poke-rich!</h4>
+                        <h4 onmouseover="mplayAudio()" onmouseout="mstopAudio()">Let's get poke-rich!</h4>
                     </li>
 
                     <li>8820 Reseda Blvd Northridge CA 91324</li>
@@ -69,7 +71,7 @@
 
                     <li>service@njoy.us</li>
 
-                <!-- Checks if it's open or closed-->
+                    <!-- Checks if it's open or closed-->
                     <li>
                         <div id="status"></div>
                     </li>

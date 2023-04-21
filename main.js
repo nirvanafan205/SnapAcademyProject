@@ -16,6 +16,7 @@ else {
   document.getElementById("status").innerHTML = "Njoy Games & Comics is currently closed.";
 }
 
+//this is for the pokemon theme song
 var audio = document.getElementById("audio");
 
 function playAudio() {
@@ -25,4 +26,16 @@ function playAudio() {
 
 function pauseAudio() {
   audio.pause();
+}
+
+//this is coin noise
+var mario = document.getElementById("mario");
+
+function mplayAudio() {
+  mario.ariaCurrentTime = 0;
+  mario.play();
+}
+
+function mpauseAudio() {
+  mario.pause();
 }
