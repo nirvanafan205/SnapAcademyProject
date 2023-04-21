@@ -16,42 +16,13 @@ else {
   document.getElementById("status").innerHTML = "Njoy Games & Comics is currently closed.";
 }
 
-//starts audio when hovered on
-function playAudio() 
-{
-  var audio = document.getElementById("audio");
+var audio = document.getElementById("audio");
+
+function playAudio() {
+  audio.ariaCurrentTime = 0;
   audio.play();
 }
 
-//ends audio when hovered on
-function stopAudio()
- {
-  var audio = document.getElementById("audio");
-  audio.pause();
-  audio.currentTime = 0;
-}
-
-
-/*
-var audio = document.getElementById("audio");
-var startTime;
-
-function playAudio() {
-  if (audio.paused) {
-    audio.currentTime = startTime;
-    audio.play();
-  }
-  else {
-    startTime = audio.currentTime;
-    audio.pause();
-  }
-}
-
 function pauseAudio() {
-  if (!audio.paused) {
-    startTime = audio.currentTime;
-    audio.pause();
-  }
+  audio.pause();
 }
-
-*/
