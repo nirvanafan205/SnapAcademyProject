@@ -99,12 +99,31 @@ footer {
     height: 7px;
 }
 
+/*
+ color transition between first two sections 
+
+.aboutTransition {
+    background: linear-gradient(to bottom, #4b0082, #ff69b4 );
+    height: 7px;
+}
+
+.pokeCardstransition {
+    background: linear-gradient(to bottom, #4b0082, #ff69b4 );
+    height: 7px;
+}
+
+*/
+
 /* About me section
     background color
 */
 
 .AboutbackgroundColor {
-    background-color: pink;
+    background-image: url('genIntro.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 #about {
@@ -124,39 +143,49 @@ footer {
 
 @keyframes wave {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     10% {
-      transform: rotate(10deg);
+        transform: rotate(10deg);
     }
+
     20% {
-      transform: rotate(-10deg);
+        transform: rotate(-10deg);
     }
+
     30% {
-      transform: rotate(12deg);
+        transform: rotate(12deg);
     }
+
     40% {
-      transform: rotate(-12deg);
+        transform: rotate(-12deg);
     }
+
     50% {
-      transform: rotate(14deg);
+        transform: rotate(14deg);
     }
+
     60% {
-      transform: rotate(-14deg);
+        transform: rotate(-14deg);
     }
+
     70% {
-      transform: rotate(8deg);
+        transform: rotate(8deg);
     }
+
     80% {
-      transform: rotate(-8deg);
+        transform: rotate(-8deg);
     }
+
     90% {
-      transform: rotate(6deg);
+        transform: rotate(6deg);
     }
+
     100% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  }
+}
 
 #about .intro {
     padding: 1rem;
@@ -172,7 +201,7 @@ footer {
 @keyframes pulse {
 
     0% {
-      border-color: #f00;
+        border-color: #f00;
     }
 
     25% {
@@ -180,7 +209,7 @@ footer {
     }
 
     50% {
-      border-color: #ff0;
+        border-color: #ff0;
     }
 
     75% {
@@ -188,21 +217,9 @@ footer {
     }
 
     100% {
-      border-color: #f00;
-    }
-  }
-
-/* Spinning annimations */
-
-/*
-@keyframes spin {
-
-    to {
-        transform: rotate(360deg);
+        border-color: #f00;
     }
 }
-
-*/
 
 #Moto {
     display: block;
@@ -212,26 +229,7 @@ footer {
     font-family: Impact, fantasy;
     letter-spacing: .2em;
     font-style: italic;
-
-       /*
-    transition: 0.70s;
-    -webkit-transition: 0.70s;
-    -moz-transition: 0.70s;
-    -ms-transition: 0.70s;
-    -o-transition: 0.70s;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-
-     Animations needs to be fixed
-    animation: spin 0.5s infinite linear;
-    display: inline-block;
-    font-size: 30px;
-    */
 }
-
 
 /* Photo Gallary */
 
@@ -244,8 +242,7 @@ img {
     transition: transform .7s ease-in-out;
 }
 
-img:hover 
-{
+img:hover {
     transform: rotate(360deg);
 }
 
@@ -263,8 +260,7 @@ img:last-child {
 
 /* Where to reach out section */
 
-.location
-{
+.location {
     text-align: center;
 }
 
@@ -287,7 +283,9 @@ ul {
 /* Pokes for sale section */
 
 .pokeCardsColor {
-    background-color: indigo;
+    background-image: url('pokeSectionbackground.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 #pokeCards {
