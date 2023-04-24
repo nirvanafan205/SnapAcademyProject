@@ -99,21 +99,6 @@ footer {
     height: 7px;
 }
 
-/*
- color transition between first two sections 
-
-.aboutTransition {
-    background: linear-gradient(to bottom, #4b0082, #ff69b4 );
-    height: 7px;
-}
-
-.pokeCardstransition {
-    background: linear-gradient(to bottom, #4b0082, #ff69b4 );
-    height: 7px;
-}
-
-*/
-
 /* About me section
     background color
 */
@@ -238,21 +223,21 @@ footer {
     justify-content: space-between;
 }
 
-img {
+#store {
     transition: transform .7s ease-in-out;
 }
 
-img:hover {
+#store:hover {
     transform: rotate(360deg);
 }
 
-img:first-child {
+#store:first-child {
     margin-right: 10px;
     border-radius: 25px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-img:last-child {
+#store:last-child {
     margin-left: 450px;
     border-radius: 25px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -300,3 +285,60 @@ ul {
     letter-spacing: .1em;
     font-style: italic;
 }
+
+/* fire sale section */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 30px;
+    padding: 10px;
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .desc {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.card .new {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+/* enlarge cards */
+
+.enlarged {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .enlarged img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+  }

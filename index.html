@@ -19,25 +19,28 @@
     <audio id="mario" src="Mario-coin-sound.mp3"></audio>
 
     <!--Navigation Bar-->
-    <nav>
-        <ul>
-            <li>
-                <h1>
-                    <i class="fa-brands fa-snapchat"></i>
-                    Snap Academy 2023 Project
-                    <i class="fa-brands fa-snapchat"></i>
-                    </a>
-                </h1>
-            </li>
 
-            <li><a href="index.html#pokeCards">Latest Deals</a></li> 
+    <div id="top">
 
-            <li><a href="https://www.njoy.us/" target="_blank">Njoy Games & Comics</a></li>
+        <nav>
+            <ul>
+                <li>
+                    <h1>
+                        <i class="fa-brands fa-snapchat"></i>
+                        Snap Academy 2023 Project
+                        <i class="fa-brands fa-snapchat"></i>
+                        </a>
+                    </h1>
+                </li>
 
-            <li><a href="">Inventory</a></li>
-        </ul>
-    </nav>
+                <li><a href="index.html#pokeCards">Latest Deals</a></li>
 
+                <li><a href="https://www.njoy.us/" target="_blank">Njoy Games & Comics</a></li>
+
+                <li><a href="inventory.html">Inventory</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="gradient"></div>
 
     <div class="AboutbackgroundColor">
@@ -56,8 +59,8 @@
             </p>
 
             <div class="gallery">
-                <img src="books.jpg" alt="Inside store">
-                <img src="store.jpg" alt="store">
+                <img src="books.jpg" alt="Inside store" id="store">
+                <img src="store.jpg" alt="store" id="store">
             </div>
 
             <div class="location">
@@ -96,6 +99,30 @@
 
         <section id="pokeCards">
             <h2>What're ya buyin?</h2>
+
+
+            <div class="gallery">
+
+                <div class="card">
+                    <img src="galarnfriends.jpg" alt="Galar and Friends VMAX Climax" class="enlarge" onclick="enlargeImage(this)">
+                    <div class="desc">Galar and friends: $90 </div>
+                    <div class="new">Galar and friends: $65</div>
+                </div>
+
+                <div class="card">
+                    <img src="charizard.jpg" alt="XY Evolutions Charizard" class="enlarge" onclick="enlargeImage(this)">
+                    <div class="desc">Holo Charizard: $55</div>
+                    <div class="new">Holo Charizard: $25</div>
+                </div>
+
+                <div class="card">
+                    <img src="eveelutions.jpg" alt="Leafeon and Espeon Alt Art" class="enlarge" onclick="enlargeImage(this)">
+                    <div class="desc">Espeon Alt Art: $95</div>
+                    <div class="new">Espeon Alt Art: $70</div>
+                    <div class="desc">Leafeon Alt Art: $75</div>
+                    <div class="new">Leafeon Alt Art: $50</div>
+                </div>
+            </div>
         </section>
 
     </div>
@@ -103,8 +130,10 @@
     <div class="gradient"></div>
 
     <footer>
-        <h2 class="end">Matthew Garcia &middot; Front-end Software Engineer</h2>
+        <h2 class="end"><a href="https://mgarcia2000.com/">Matthew Garcia &middot; Front-end Software Engineer</a></h2>
+        <p><a href="index.html#top">top of page</a></p>
         <p><small>&copy; 2023 Matthew Garcia All rights reserved</small></p>
+        <p><small>for unofficial website for Njoy Games & Comics</small></p>
     </footer>
 
     <script src="main.js"></script>

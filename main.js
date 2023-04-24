@@ -39,3 +39,26 @@ function mplayAudio() {
 function mpauseAudio() {
   mario.pause();
 }
+
+
+// enlarge firesale pics
+
+function enlargeImage(image) {
+  var enlargedImage = document.createElement("div");
+  var newImage = document.createElement("img");
+  newImage.src = image.src;
+  enlargedImage.appendChild(newImage);
+  enlargedImage.className = "enlarged";
+  document.body.appendChild(enlargedImage);
+
+
+  enlargedImage.addEventListener('click', function (event) {
+    if (event.target === enlargedImage) {
+      document.body.removeChild(enlargedImage);
+    }
+  });
+
+
+
+}
+
