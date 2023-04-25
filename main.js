@@ -5,7 +5,7 @@ var now = new Date();
 var openTime = new Date();
 openTime.setHours(12, 0, 0); // 12:00 PM
 var closeTime = new Date();
-closeTime.setHours(17, 30, 0); // 8:00 PM
+closeTime.setHours(17, 30, 0); // 5:30 PM
 
 // Check if the current time is between the opening and closing times
 if (now.getTime() >= openTime.getTime() && now.getTime() <= closeTime.getTime()) {
@@ -40,9 +40,7 @@ function mpauseAudio() {
   mario.pause();
 }
 
-
 // enlarge firesale pics
-
 function enlargeImage(image) {
   var enlargedImage = document.createElement("div");
   var newImage = document.createElement("img");
@@ -51,14 +49,13 @@ function enlargeImage(image) {
   enlargedImage.className = "enlarged";
   document.body.appendChild(enlargedImage);
 
-
+  //allows user to click out of enlarge pics
   enlargedImage.addEventListener('click', function (event) {
     if (event.target === enlargedImage) {
       document.body.removeChild(enlargedImage);
     }
   });
-
-
-
 }
 
+
+// carousel psa cards

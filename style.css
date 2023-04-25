@@ -332,13 +332,54 @@ ul {
     bottom: 0;
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.7);
-  }
+}
 
-  .enlarged img {
+.enlarged img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 90%;
     max-height: 90%;
-  }
+}
+
+/* Inventory section */
+
+#inventorySealed {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.sealedBackground {
+
+    background-image: url('purpGall.png');
+    background-size: cover;
+    overflow: hidden;
+
+
+}
+
+/* PSA cards section */
+.singlesBackground {
+
+    background-image: url('pinkGal.jpg');
+    background-size: cover;
+    overflow: hidden;
+
+
+}
+
+/* pokeLot */
+.lotBackground {
+    background-image: url('milky.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* centering prices of everything */
+
+.descriptionSingles {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
